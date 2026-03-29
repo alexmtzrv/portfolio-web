@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+    font-size: 34px;
+}
+
+/*ESTRUCTURA DE LA WEB*/
+
+body {
+    --text-font: "Dongle";
+    --title-font: "Caveat Brush";
+    --primaryblue: #A6E7EB;
+    --highlightblue: #6FB4B8;
+    --cardyellow: #EBEBA6;
+    --cardgreen: #B8EBA6;
+    --cardpink: #d7c3f1;
+    --shadows: 3px 3px #000;
+    --highlight-weight: 700;
+    --normal-weight: 300;
+    --card-borders: 2px solid black;
+    --card-radius: 3px;
+    --normal-fsize: 34px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+    background-size: 25px 25px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+    width: 80dvw;
+    padding-left: 20px;
+    /*border: 2px solid #ff86be;*/
+}
+
+.aside-paddings {
+    width: 10dvw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    border-right: 2px solid #000;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 38px;
+    /*border: 2px solid #000;*/
+}
+
+.navbar-logo {
+    padding-top: 12px;
+}
+
+.navbar-logo img {
+    width: 100px;
+    height: 45px;
+}
+
+.navbar-ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-li {
+    font-size: 40px;
+    line-height: 0;
+    list-style: none;
+    font-weight: 400;
+}
+
+.navbar-li:last-child {
+    color: var(--highlightblue);
+    font-weight: var(--highlight-weight);
+}
+
+/*HERO SECTION*/
+.hero-section {
+    width: 100%;
+    height: 30dvh;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+}
+
+.hero-section-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*gap: 45px;*/
+    /*border: 1px solid pink;*/
+    justify-content: center;
+    align-items: start;
+}
+
+.hero-section-icons {
+    display: flex;
+    flex-direction: row;
+    /*width: 100%;*/
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    /*border: 1px solid mediumpurple;*/
+}
+
+.icons-photo {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url("assets/alex-svicon.png");
+    background-size: cover;
+    background-position: 50% 45%;
+}
+
+.icons-vector img {
+    width: 70px;
+}
+
+.icons-vector {
+    position: relative;
+}
+
+.icons-vector::after {
+    content: 'Alex';
+    font-family: var(--title-font);
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--primaryblue);
+    position: absolute;
+    top: -30px;
+    left: 80px;
+    transform: rotate(-17deg);
+    font-size: 34px;
+}
+
+.hero-section-title p {
+    font-size: 96px;
+    line-height: 0.7;
+    letter-spacing: 0.3rem;
+}
+
+.dev-text {
+    position: relative;
+}
+
+.dev-text::before {
+    content: '';
+    width: 100%;
+    height: 30%;
+    background-color: var(--primaryblue);
+    position: absolute;
+    bottom: 15px;
+    z-index: -1;
+    box-shadow: var(--shadows);
+}
+
+.hero-section-right {
+    width: 70%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.hero-section-text {
+    width: 100%;
+}
+
+.hero-section-text p {
+    line-height: 1;
+    font-weight: var(--normal-weight);
+}
+
+.highlight-words {
+    font-weight: var(--highlight-weight);
+    color: var(--highlightblue);
+}
+
+.hero-section-addons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+}
+
+.hero-section-buttons {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.button {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primaryblue);
+    padding: 0 8px;
+    gap: 10px;
+    border: var(--card-borders);
+    box-shadow: var(--shadows);
+    border-radius: var(--card-radius);
+}
+
+.button p {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
+}
+
+#star-logo {
+    width: 26px;
+    height: 26px;
+}
+
+.hero-section-world {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.hero-section-world p {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#world-vector {
+    width: 25px;
+    height: 25px;
+}
+
+/*EXPERIENCE SECTION*/
+#experience-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.titles-section-left {
+    width: 12%;
+}
+
+.titles-section-left p {
+    font-family: var(--title-font);
+    background-color: var(--primaryblue);
+    padding: 2px;
+    text-align: center;
+}
+
+.experience-section-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: end;*/
+    /*align-items: end;*/
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 30px 100px;
+    position: relative;
+}
+
+.top {
+    border-bottom: 1.5px solid #000000;
+}
+
+.bottom {
+    border-top: 1.5px solid #000000;
+}
+
+.experience-date {
+    padding: 0 8px;
+    border: var(--card-borders);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadows);
+    position: absolute;
+    left: -200px;
+    top: 100px;
+}
+
+
+.first-date {
+    background-color: var(--cardyellow);
+}
+
+.second-date {
+    background-color: var(--cardgreen);
+}
+
+.experience-title, .experience-title span {
+    font-size: 38px;
+    font-weight: var(--highlight-weight);
+}
+
+.experience-description {
+    font-weight: var(--normal-weight);
+}
+
+.experience-description li {
+    list-style: none;
+    position: relative;
+}
+
+.experience-description li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--primaryblue);
+    border: var(--card-borders);
+    border-radius: 50%;
+    box-shadow: 2px 2px 0 #000000;
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    margin-right: 10px;
+}
+
+/*PROJECT SECTION*/
+#project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-section-right {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    flex-grow: 1;
+    padding: 12px 17px 12px 17px;
+    max-width: 450px;
+}
+
+.project-photo-wrapper {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.44);
+    border-radius: 5px;
+}
+
+.project-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-body {
+    margin-top: 1rem;
+}
+
+.project-description p {
+    line-height: 1;
+    font-weight: var(--normal-weight);
+}
+
+.project-skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+.project-skills li {
+    font-size: 25px;
+    line-height: 1;
+    background-color: inherit;
+}
+
+.project-skills li:first-child {
+    background-color: var(--cardgreen);
+}
+
+.project-skills li:nth-child(2n) {
+    background-color: var(--cardyellow);
+}
+
+.project-skills li:nth-child(3n) {
+    background-color: var(--primaryblue);
+}
+
+.website-redirect {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.website-redirect-wrapper {
+    background-color: var(--cardpink);
+}
+
+.website-redirect-wrapper a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: var(--highlight-weight);
+}
+
+.website-redirect-wrapper p {
+    font-size: 0.9rem;
+}
+
+.website-redirect span {
+    font-size: 20px;
+}
+
+/*SKILLS SECTION*/
+#skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skills-section-right {
+    width: 70%;
+}
+
+
+#fe-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.front-end-skills-grid p {
+    font-weight: var(--highlight-weight);
+}
+
+.skills-title {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+.skills-title p {
+    font-size: 45px;
+    font-weight: var(--highlight-weight);
+}
+
+.skill-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: var(--card-borders);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadows);
+    width: 150px;
+    height: 150px;
+}
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.skill-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0);
+}
+
+.skill-cards p {
+    line-height: 0;
+}
+
+.html-card {
+    background: #ff8563;
+    background: linear-gradient(0deg, rgba(255, 133, 99, 1) 0%, rgba(255, 207, 191, 1) 100%);
+}
+
+.css-card {
+    background: #7d97ff;
+    background: linear-gradient(0deg, rgba(125, 151, 255, 1) 0%, rgba(222, 226, 255, 1) 100%);
+}
+
+.js-card {
+    background: #ffef73;
+    background: linear-gradient(0deg, rgba(255, 239, 115, 1) 0%, rgba(255, 250, 209, 1) 100%);
+}
+
+#be-skills-grid {
+    display: grid;
+    grid-template-areas:
+    "betitle btools btools btools"
+    "pycard figcard gitcard sqcard";
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+#be-skills-grid > .backend-title {
+    grid-area: betitle;
+}
+
+#be-skills-grid > .tools-title {
+    grid-area: btools;
+}
+
+#be-skills-grid > .python-card {
+    grid-area: pycard;
+}
+
+#be-skills-grid > .figma-card {
+    grid-area: figcard;
+}
+
+#be-skills-grid > .git-card {
+    grid-area: gitcard;
+}
+
+#be-skills-grid > .squarespace-card {
+    grid-area: sqcard;
+}
+
+
+
+
+
+
+
+
+
