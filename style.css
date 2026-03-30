@@ -11,7 +11,7 @@
 body {
     --text-font: "Dongle";
     --title-font: "Caveat Brush";
-    --primaryblue: #A6E7EB;
+    --primaryblue: rgba(194, 233, 238, 0.61);
     --highlightblue: #6FB4B8;
     --cardyellow: #EBEBA6;
     --cardgreen: #B8EBA6;
@@ -472,9 +472,8 @@ main {
 
 #fe-skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    justify-items: center;
 }
 
 .front-end-skills-grid p {
@@ -534,13 +533,33 @@ main {
     background: linear-gradient(0deg, rgba(255, 239, 115, 1) 0%, rgba(255, 250, 209, 1) 100%);
 }
 
+.python-card{
+    background: #4B8BBE;
+    background: linear-gradient(0deg, rgba(75, 139, 190, 1) 0%, rgba(191, 226, 255, 1) 100%);
+}
+
+.figma-card{
+    background: #A259FF;
+    background: linear-gradient(0deg, rgba(162, 89, 255, 1) 0%, rgba(211, 181, 255, 1) 100%);
+}
+
+.git-card{
+    background: #F14E32;
+    background: linear-gradient(0deg, rgba(241, 78, 50, 1) 0%, rgba(255, 175, 163, 1) 100%);
+}
+
+.squarespace-card{
+    background: #92ed8a;
+    background: linear-gradient(0deg, rgba(146, 237, 138, 1) 0%, rgba(212, 255, 212, 1) 100%);
+}
+
 #be-skills-grid {
     display: grid;
     grid-template-areas:
     "betitle btools btools btools"
     "pycard figcard gitcard sqcard";
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 #be-skills-grid > .backend-title {
