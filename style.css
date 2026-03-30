@@ -490,6 +490,19 @@ main {
     font-weight: var(--highlight-weight);
 }
 
+.skills-container{
+    padding: 40px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.skills-container legend{
+    font-size: 45px;
+    padding: 0 10px;
+    line-height: 0;
+    font-weight: var(--highlight-weight);
+}
+
 .skill-cards {
     display: flex;
     flex-direction: column;
