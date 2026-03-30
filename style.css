@@ -11,7 +11,7 @@
 body {
     --text-font: "Dongle";
     --title-font: "Caveat Brush";
-    --primaryblue: rgba(194, 233, 238, 0.61);
+    --primaryblue: #A6E7EB;
     --highlightblue: #6FB4B8;
     --cardyellow: #EBEBA6;
     --cardgreen: #B8EBA6;
