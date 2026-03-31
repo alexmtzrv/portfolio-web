@@ -707,6 +707,45 @@ main {
     background-color: var(--cardyellow);
 }
 
+/*CONTACT SECTION*/
+#contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-section-left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.contact-section-right{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.form-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.form-body input, textarea{
+    width: 100%;
+}
+
+
 
 
 
