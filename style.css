@@ -469,24 +469,48 @@ main {
     width: 70%;
 }
 
+#skills-section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "frontend frontend frontend frontend"
+    "backend tools tools tools";
+    gap: 1.5rem;
+}
 
 #fe-skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#be-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+}
+
+#tools-skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
     gap: 1rem;
+
+}
+
+#skills-section-grid > .front-end-container{
+    grid-area: frontend;
+}
+
+#skills-section-grid > .back-end-container{
+    grid-area: backend;
+}
+
+#skills-section-grid > .tools-container{
+    grid-area: tools;
 }
 
 .front-end-skills-grid p {
-    font-weight: var(--highlight-weight);
-}
-
-.skills-title {
-    grid-column: 1 / -1;
-    justify-self: start;
-}
-
-.skills-title p {
-    font-size: 45px;
     font-weight: var(--highlight-weight);
 }
 
@@ -518,11 +542,14 @@ main {
 .skill-icon {
     width: 70px;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-icon img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
     filter: brightness(0);
 }
@@ -546,6 +573,11 @@ main {
     background: linear-gradient(0deg, rgba(255, 239, 115, 1) 0%, rgba(255, 250, 209, 1) 100%);
 }
 
+#js-icon{
+    width: 65%;
+    height: 65%;
+}
+
 .python-card{
     background: #4B8BBE;
     background: linear-gradient(0deg, rgba(75, 139, 190, 1) 0%, rgba(191, 226, 255, 1) 100%);
@@ -566,38 +598,7 @@ main {
     background: linear-gradient(0deg, rgba(146, 237, 138, 1) 0%, rgba(212, 255, 212, 1) 100%);
 }
 
-#be-skills-grid {
-    display: grid;
-    grid-template-areas:
-    "betitle btools btools btools"
-    "pycard figcard gitcard sqcard";
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
 
-#be-skills-grid > .backend-title {
-    grid-area: betitle;
-}
-
-#be-skills-grid > .tools-title {
-    grid-area: btools;
-}
-
-#be-skills-grid > .python-card {
-    grid-area: pycard;
-}
-
-#be-skills-grid > .figma-card {
-    grid-area: figcard;
-}
-
-#be-skills-grid > .git-card {
-    grid-area: gitcard;
-}
-
-#be-skills-grid > .squarespace-card {
-    grid-area: sqcard;
-}
 
 
 
