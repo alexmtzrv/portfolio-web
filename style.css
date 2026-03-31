@@ -478,6 +478,10 @@ main {
     gap: 1.5rem;
 }
 
+.skills-section-grid p{
+    font-weight: var(--highlight-weight);
+}
+
 #fe-skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -508,10 +512,6 @@ main {
 
 #skills-section-grid > .tools-container{
     grid-area: tools;
-}
-
-.front-end-skills-grid p {
-    font-weight: var(--highlight-weight);
 }
 
 .skills-container{
@@ -597,6 +597,113 @@ main {
     background: #92ed8a;
     background: linear-gradient(0deg, rgba(146, 237, 138, 1) 0%, rgba(212, 255, 212, 1) 100%);
 }
+
+/*ABOUT ME SECTION*/
+#aboutme-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.aboutme-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutme-photo{
+    width: 300px;
+    height: 300px;
+
+}
+
+.aboutme-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    object-fit: contain;
+    /*border: 1px solid black;*/
+}
+
+.aboutme-hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--card-borders);
+    box-shadow: var(--shadows);
+    background-color: var(--cardgreen);
+}
+
+.aboutme-hobbies p{
+    font-weight: var(--highlight-weight);
+}
+
+.hobbies-icons{
+    width: 25px;
+    height: 25px;
+}
+
+.hobbies-ul{
+    list-style: none;
+    font-weight: var(--normal-weight);
+}
+
+.hobbies-ul li span{
+    margin-right: 0.5rem;
+}
+
+.aboutme-section-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: start;
+    gap:37px;
+    padding: 80px;
+}
+
+.aboutme-title{
+    width: 20%;
+}
+
+.aboutme-title p{
+    font-family: var(--title-font);
+    background-color: var(--primaryblue);
+    padding:5px;
+    text-align: center;
+}
+
+.aboutme-information{
+    font-weight: var(--normal-weight);
+}
+
+.aboutme-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.information-icons{
+    width: 35px;
+    height: 35px;
+}
+
+.aboutme-cv-download-button{
+    display: flex;
+    font-weight: var(--highlight-weight);
+}
+
+.cv-button{
+    background-color: var(--cardyellow);
+}
+
+
+
+
+
 
 
 
