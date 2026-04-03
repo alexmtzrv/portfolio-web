@@ -23,6 +23,7 @@ body {
     --card-radius: 3px;
     --normal-fsize: 34px;
     display: grid;
+    width: 100dvw;
     grid-template-columns: 10dvw 1fr 10dvw ;
     grid-template-areas:
             "l-aside main-content l-right"
@@ -33,11 +34,11 @@ body {
     position: relative;
 }
 
-body > .aside-paddings-left{
+body > .a-left{
     grid-area: l-aside;
 }
 
-body > .aside-paddings-right{
+body >  .a-right{
     grid-area: l-right;
 }
 
@@ -61,9 +62,6 @@ main {
 
 .aside-paddings {
     width: 10dvw;
-    /*height: 100vh;*/
-    /*position: sticky;*/
-    /*top: 0;*/
 }
 
 .a-left {
