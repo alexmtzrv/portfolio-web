@@ -54,14 +54,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    width: 80dvw;
     padding-left: 100px;
     padding-bottom: 100px;
-    /*border: 2px solid #ff86be;*/
-}
-
-.aside-paddings {
-    width: 10dvw;
 }
 
 .a-left {
