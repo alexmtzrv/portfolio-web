@@ -24,7 +24,7 @@ body {
     --normal-fsize: 34px;
     display: grid;
     width: 100dvw;
-    grid-template-columns: 10dvw 1fr 10dvw ;
+    grid-template-columns: 10dvw 1fr 10dvw;
     grid-template-areas:
             "l-aside main-content l-right"
             "footer footer footer";
@@ -34,19 +34,19 @@ body {
     position: relative;
 }
 
-body > .a-left{
+body > .a-left {
     grid-area: l-aside;
 }
 
-body >  .a-right{
+body > .a-right {
     grid-area: l-right;
 }
 
-body > main{
+body > main {
     grid-area: main-content;
 }
 
-body > footer{
+body > footer {
     grid-area: footer;
 }
 
@@ -475,7 +475,7 @@ main {
     width: 70%;
 }
 
-#skills-section-grid{
+#skills-section-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -484,7 +484,7 @@ main {
     gap: 1.5rem;
 }
 
-.skills-section-grid p{
+.skills-section-grid p {
     font-weight: var(--highlight-weight);
 }
 
@@ -500,33 +500,33 @@ main {
     justify-items: center;
 }
 
-#tools-skills-grid{
+#tools-skills-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 1rem;
 
 }
 
-#skills-section-grid > .front-end-container{
+#skills-section-grid > .front-end-container {
     grid-area: frontend;
 }
 
-#skills-section-grid > .back-end-container{
+#skills-section-grid > .back-end-container {
     grid-area: backend;
 }
 
-#skills-section-grid > .tools-container{
+#skills-section-grid > .tools-container {
     grid-area: tools;
 }
 
-.skills-container{
+.skills-container {
     padding: 40px;
     border: 3px solid #000000;
     border-radius: 10px;
 }
 
-.skills-container legend{
+.skills-container legend {
     font-size: 45px;
     padding: 0 10px;
     line-height: 0;
@@ -579,33 +579,33 @@ main {
     background: linear-gradient(0deg, rgba(255, 239, 115, 1) 0%, rgba(255, 250, 209, 1) 100%);
 }
 
-#js-icon{
+#js-icon {
     width: 65%;
     height: 65%;
 }
 
-.python-card{
+.python-card {
     background: #4B8BBE;
     background: linear-gradient(0deg, rgba(75, 139, 190, 1) 0%, rgba(191, 226, 255, 1) 100%);
 }
 
-.figma-card{
+.figma-card {
     background: #A259FF;
     background: linear-gradient(0deg, rgba(162, 89, 255, 1) 0%, rgba(211, 181, 255, 1) 100%);
 }
 
-.git-card{
+.git-card {
     background: #F14E32;
     background: linear-gradient(0deg, rgba(241, 78, 50, 1) 0%, rgba(255, 175, 163, 1) 100%);
 }
 
-.squarespace-card{
+.squarespace-card {
     background: #92ed8a;
     background: linear-gradient(0deg, rgba(146, 237, 138, 1) 0%, rgba(212, 255, 212, 1) 100%);
 }
 
 /*ABOUT ME SECTION*/
-#aboutme-section{
+#aboutme-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -613,34 +613,34 @@ main {
     width: 100%;
 }
 
-.aboutme-section-left{
+.aboutme-section-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.aboutme-photo{
+.aboutme-photo {
     width: 300px;
     height: 300px;
     position: relative;
 }
 
-.aboutme-photo svg{
+.aboutme-photo svg {
     position: absolute;
     z-index: 10;
 }
 
-.aboutme-photo img{
+.aboutme-photo img {
     width: 100%;
     height: 100%;
-    border-radius:20px;
+    border-radius: 20px;
     object-fit: contain;
     z-index: 20;
     position: relative;
     /*border: 1px solid black;*/
 }
 
-.aboutme-hobbies{
+.aboutme-hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -649,78 +649,78 @@ main {
     background-color: var(--cardgreen);
 }
 
-.aboutme-hobbies p{
+.aboutme-hobbies p {
     font-weight: var(--highlight-weight);
 }
 
-.hobbies-icons{
+.hobbies-icons {
     width: 25px;
     height: 25px;
 }
 
-.hobbies-ul{
+.hobbies-ul {
     list-style: none;
     font-weight: var(--normal-weight);
 }
 
-.hobbies-ul li span{
+.hobbies-ul li span {
     margin-right: 0.5rem;
 }
 
-.aboutme-section-right{
+.aboutme-section-right {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: start;
-    gap:37px;
+    gap: 37px;
     padding: 80px;
 }
 
-.aboutme-title{
+.aboutme-title {
     width: 20%;
 }
 
-.aboutme-title p{
+.aboutme-title p {
     font-family: var(--title-font);
     background-color: var(--primaryblue);
-    padding:5px;
+    padding: 5px;
     text-align: center;
 }
 
-.aboutme-information{
+.aboutme-information {
     font-weight: var(--normal-weight);
 }
 
-.aboutme-icons{
+.aboutme-icons {
     display: flex;
     flex-direction: row;
     gap: 0.8rem;
     margin-top: 0.5rem;
 }
 
-.information-icons{
+.information-icons {
     width: 35px;
     height: 35px;
 }
 
-.aboutme-cv-download-button{
+.aboutme-cv-download-button {
     display: flex;
     font-weight: var(--highlight-weight);
 }
 
-.cv-button{
+.cv-button {
     background-color: var(--cardyellow);
 }
 
 /*CONTACT SECTION*/
-#contact-section{
+#contact-section {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.contact-section-left{
+.contact-section-left {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -728,30 +728,30 @@ main {
     align-items: center;
 }
 
-.contact-title{
+.contact-title {
     font-family: var(--title-font);
     background-color: var(--primaryblue);
     text-align: start;
 }
 
-.contact-row img{
+.contact-row img {
     transform: rotate(-90deg);
 }
 
-.contact-information{
+.contact-information {
     width: 100%;
     padding: 10px;
     font-weight: var(--highlight-weight);
     margin-top: 1.5rem;
 }
 
-.contact-section-right{
+.contact-section-right {
     display: flex;
     justify-content: center;
     width: 70%;
 }
 
-.form-wrapper{
+.form-wrapper {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -760,7 +760,7 @@ main {
     box-shadow: 10px 10px #000000;
 }
 
-.form-body{
+.form-body {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -768,7 +768,7 @@ main {
     background-color: #f2f2f2;
 }
 
-.form-top-bar{
+.form-top-bar {
     width: 100%;
     height: 50px;
     border-bottom: 3px solid #000000;
@@ -781,7 +781,7 @@ main {
     background-color: var(--primaryblue);
 }
 
-.top-bar-buttons{
+.top-bar-buttons {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -789,26 +789,26 @@ main {
     gap: 0.5rem;
 }
 
-.top-bar-buttons span{
+.top-bar-buttons span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 3px solid #000000;
 }
 
-#tbb-1{
+#tbb-1 {
     background-color: #ED6A5F;
 }
 
-#tbb-2{
+#tbb-2 {
     background-color: #F6BE50;
 }
 
-#tbb-3{
-    background-color:#61C555;
+#tbb-3 {
+    background-color: #61C555;
 }
 
-.form-body input, textarea{
+.form-body input, textarea {
     width: 100%;
     margin-top: 1rem;
     border-left: none;
@@ -819,42 +819,42 @@ main {
     padding-left: 10px;
 }
 
-.form-body input:first-child{
+.form-body input:first-child {
     margin-top: inherit;
 }
 
-.form-body button{
+.form-body button {
     margin-top: 1rem;
     background-color: var(--cardgreen);
     font-weight: var(--highlight-weight);
     font-size: 40px;
 }
 
-.form-body textarea{
+.form-body textarea {
     height: 130px;
     resize: none;
 }
 
-.form-body input::placeholder, textarea::placeholder{
+.form-body input::placeholder, textarea::placeholder {
     font-weight: var(--normal-weight);
     letter-spacing: 2px;
     color: #0c0c0c;
 }
 
 /*FOOTER SECTION*/
-.footer-section{
+.footer-section {
     display: flex;
     flex-direction: row;
     height: 15dvh;
     border-top: 2px solid #000;
 }
 
-.footer-left-section{
+.footer-left-section {
     width: 10dvw;
-    border-right:2px solid #000;
+    border-right: 2px solid #000;
 }
 
-.footer-right-section{
+.footer-right-section {
     width: 90dvw;
     display: flex;
     flex-direction: row;
@@ -863,7 +863,7 @@ main {
     padding: 0 5rem;
 }
 
-.footer-section-buttons{
+.footer-section-buttons {
     flex-grow: inherit;
 }
 
