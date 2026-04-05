@@ -24,10 +24,10 @@ body {
     --normal-fsize: 34px;
     display: grid;
     width: 100dvw;
-    grid-template-columns: 10dvw 1fr 10dvw;
+    grid-template-columns: 10dvw 1fr;
     grid-template-areas:
-            "l-aside main-content l-right"
-            "footer footer footer";
+            "l-aside main-content"
+            "footer footer ";
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
     background-size: 25px 25px;
@@ -36,10 +36,6 @@ body {
 
 body > .a-left {
     grid-area: l-aside;
-}
-
-body > .a-right {
-    grid-area: l-right;
 }
 
 body > main {
@@ -54,8 +50,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-left: 100px;
-    padding-bottom: 100px;
+    padding: 0 80px 100px;
 }
 
 .a-left {
