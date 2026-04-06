@@ -83,11 +83,11 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 28px;
+    gap: 2vw;
 }
 
 .navbar-li {
-    font-size: 40px;
+    font-size: clamp(25px, calc(22.143px + 0.893vw), 40px);
     line-height: 0;
     list-style: none;
     font-weight: 400;
