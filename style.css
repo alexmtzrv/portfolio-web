@@ -70,12 +70,13 @@ main {
 }
 
 .navbar-logo {
-    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    width: 3rem;
 }
 
 .navbar-logo img {
-    width: 100px;
-    height: 45px;
+    width: 100%;
 }
 
 .navbar-ul {
@@ -87,15 +88,26 @@ main {
 }
 
 .navbar-li {
-    font-size: clamp(25px, calc(22.143px + 0.893vw), 40px);
+    /*font-size: clamp(25px, calc(22.143px + 0.893vw), 40px);*/
     line-height: 0;
     list-style: none;
     font-weight: 400;
+    padding-top: 8px;
 }
 
 .navbar-li:last-child {
     color: var(--highlightblue);
     font-weight: var(--highlight-weight);
+}
+
+.navbar__checkbox{
+    display: none;
+}
+
+.navbar__open-button {
+    display: none;
+    font-size: 2.5rem;
+    padding-top: 8px;
 }
 
 /*HERO SECTION*/
