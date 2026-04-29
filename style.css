@@ -22,6 +22,7 @@ body {
     --card-borders: 2px solid black;
     --card-radius: 3px;
     --normal-fsize: 34px;
+    --nav-height: 80px;
     width: 100dvw;
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
@@ -38,12 +39,17 @@ main {
 /*NAVBAR*/
 
 .navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
     width: 100%;
-    padding:0 100px;
+    height: var(--nav-height);
+    padding:15px 1rem;
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 38px;
+    border-bottom: 2px solid #000000;
 }
 
 .navbar-logo {
@@ -58,7 +64,6 @@ main {
 }
 
 .navbar-ul {
-    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,23 +91,22 @@ main {
 @media screen and (max-width: 905px) {
     .navbar-ul {
         position: fixed;
+        top: var(--nav-height);
         right:0;
-        bottom: 0;
         width: 50%;
-        height: 100dvh;
+        height: calc(100dvh - var(--nav-height));
         flex-direction: column;
         justify-content: space-evenly;
-        z-index: -10;
+        align-items: center;
         margin-right: inherit;
         display: none;
+        border-left: 2px solid #000000;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
     }
 
     #open-menu:checked ~ .navbar-ul {
         display: flex;
-    }
-
-    .navbar {
-        z-index: 20;
     }
 
     .navbar-burger {
@@ -118,6 +122,11 @@ main {
         padding: 2px;
         background-color: #000000;
         border-radius: 30px;
+    }
+
+    .navbar-li{
+        text-align: center;
+        font-size:40px;
     }
 }
 
