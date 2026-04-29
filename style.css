@@ -22,47 +22,24 @@ body {
     --card-borders: 2px solid black;
     --card-radius: 3px;
     --normal-fsize: 34px;
-    display: grid;
     width: 100dvw;
-    grid-template-columns: 10dvw 1fr;
-    grid-template-areas:
-            "l-aside main-content"
-            "footer footer ";
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
     background-size: 25px 25px;
 }
 
-body > .a-left {
-    grid-area: l-aside;
-}
-
-body > main {
-    grid-area: main-content;
-}
-
-body > footer {
-    grid-area: footer;
-}
-
 main {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 0 0 100px;
-    min-height: 100vh;
-}
-
-.a-left {
-    border-right: 2px solid #000;
+    padding: 0 100px 100px ;
 }
 
 /*NAVBAR*/
 
 .navbar {
     width: 100%;
-    padding: 10px;
+    padding:0 100px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -81,6 +58,7 @@ main {
 }
 
 .navbar-ul {
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
