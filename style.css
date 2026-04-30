@@ -131,7 +131,7 @@ main {
 }
 
 /*HERO SECTION*/
-.hero-section {
+#hero-section {
     width: 100%;
     height: 30dvh;
     display: flex;
