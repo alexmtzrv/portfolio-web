@@ -23,6 +23,8 @@ body {
     --card-radius: 3px;
     --normal-fsize: 34px;
     --nav-height: 80px;
+    --responsive-text: clamp(28px, 3vw, 34px);
+    --responsive-text-buttons: clamp(18px, 3vw, 25px);
     width: 100dvw;
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
@@ -33,13 +35,17 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 160px 100px 100px ;
+    padding: clamp(16px, 4vw, 64px);
+    margin-top: 100px;
+    /*height: 300dvh;*/
+    border: 1px solid pink;
 }
 
 /*NAVBAR*/
 
 .navbar {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -50,6 +56,7 @@ main {
     justify-content: end;
     gap: 38px;
     border-bottom: 2px solid #000000;
+    z-index: 10;
 }
 
 .navbar-logo {
@@ -133,21 +140,24 @@ main {
 /*HERO SECTION*/
 #hero-section {
     width: 100%;
-    height: 30dvh;
+    /*max-height: 50dvh;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 35px;
+    gap: 1rem;
+    /*border: 1px solid green;*/
 }
 
 .hero-section-left {
-    width: 30%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid green;
 }
 
 .hero-section-icons {
@@ -174,6 +184,7 @@ main {
 
 .icons-vector {
     position: relative;
+    z-index: 1;
 }
 
 .icons-vector::after {
@@ -188,12 +199,13 @@ main {
     left: 80px;
     transform: rotate(-17deg);
     font-size: 34px;
+    z-index: 1;
 }
 
 .hero-section-title p {
-    font-size: 96px;
+    font-size: 70px;
     line-height: 0.7;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 
 .dev-text {
@@ -212,26 +224,30 @@ main {
 }
 
 .hero-section-right {
-    width: 70%;
+    max-width: 70%;
     height: 100%;
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    gap: 30px;
+    gap: 40px;
+    border: 1px solid green;
 }
 
 .hero-section-text {
     width: 100%;
+    border: 1px solid green;
+
 }
 
 .hero-section-text p {
     line-height: 1;
     font-weight: var(--normal-weight);
+    font-size: var(--responsive-text);
 }
 
 .highlight-words {
+    font-size: var(--responsive-text);
     font-weight: var(--highlight-weight);
     color: var(--highlightblue);
 }
@@ -240,17 +256,26 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: start;
     align-content: center;
+    gap: 15px;
+    border: 1px solid green;
+}
+
+.hero-section-addons p {
+    font-size: var(--responsive-text-buttons);
 }
 
 .hero-section-buttons {
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
+    /*height: 100%;*/
     flex-direction: row;
     align-items: center;
     gap: 25px;
-    flex-grow: 1;
+    margin-right: 1rem;
+    text-wrap: nowrap;
 }
 
 .button {
@@ -269,7 +294,6 @@ main {
 }
 
 .button p {
-    font-size: 25px;
     line-height: 1;
 }
 
@@ -301,6 +325,30 @@ main {
 #world-vector {
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width: 850px) {
+    .hero-section-title p{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #hero-section {
+        flex-direction: column;
+        gap:1rem;
+        border:1px solid red;
+    }
+
+    .hero-section-left {
+        width: 100%;
+        border:1px solid green;
+    }
+
+    .hero-section-right{
+        max-width: inherit;
+        width: 100%;
+    }
 }
 
 /*EXPERIENCE SECTION*/
