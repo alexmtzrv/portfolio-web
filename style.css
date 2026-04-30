@@ -33,7 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 0 100px 100px ;
+    padding: 160px 100px 100px ;
 }
 
 /*NAVBAR*/
