@@ -204,7 +204,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    gap: 40px;
+    gap: 0.6rem;
 }
 
 .hero-section-text {
