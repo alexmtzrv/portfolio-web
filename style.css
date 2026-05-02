@@ -361,15 +361,20 @@ main {
     border-radius: 20px;
 }
 
+.experience-section-right li{
+    font-size: var(--responsive-text);
+}
+
+.experience-section-right span{
+    font-size: inherit;
+}
+
 .experience-card {
     display: flex;
     flex-direction: column;
     padding: 30px;
     position: relative;
-}
-
-.experience-title-date{
-    font-weight: var(--normal-weight);
+    gap: 0.3rem;
 }
 
 .top {
@@ -397,11 +402,6 @@ main {
 
 .second-date {
     background-color: var(--cardgreen);
-}
-
-.experience-title, .experience-title span {
-    font-size: 38px;
-    font-weight: var(--highlight-weight);
 }
 
 .experience-description {
