@@ -40,7 +40,7 @@ main {
     padding: clamp(16px, 4vw, 100px);
     margin-top: 100px;
     /*height: 300dvh;*/
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
 }
 
 /*NAVBAR*/
@@ -147,7 +147,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .hero-section-left {
@@ -339,7 +339,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    border: 1px solid hotpink;
+    /*border: 1px solid hotpink;*/
     width: 90%;
     position: relative;
     margin: auto;
@@ -368,13 +368,29 @@ main {
     border-radius: 20px;
 }
 
+.experience-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-title{
+    margin-right:0.5rem;
+}
+
 .experience-section-right li{
     font-size: var(--responsive-text);
 }
 
-.experience-section-right p, span{
+.experience-section-right p{
     font-size: var(--responsive-text-title);
+    text-wrap: nowrap;
 }
+
+.responsive-title{
+    font-size: var(--responsive-text-title);
+    text-wrap: wrap;
+}
+
 
 .experience-card {
     display: flex;
@@ -400,15 +416,6 @@ main {
     /*position: absolute;*/
     left: -200px;
     top: 100px;
-}
-
-
-.first-date {
-    background-color: var(--cardyellow);
-}
-
-.second-date {
-    background-color: var(--cardgreen);
 }
 
 .experience-description {
