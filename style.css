@@ -434,6 +434,12 @@ main {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 730px) {
+    #experience-section {
+        width: 100%;
+    }
+}
+
 /*PROJECT SECTION*/
 #project-section {
     display: flex;
