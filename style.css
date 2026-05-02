@@ -25,6 +25,7 @@ body {
     --nav-height: 80px;
     --responsive-text: clamp(28px, 3vw, 34px);
     --responsive-text-buttons: clamp(22px, 3vw, 25px);
+    --responsive-text-title: clamp(30px, 3vw, 34px);
     width: 100dvw;
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
@@ -32,13 +33,14 @@ body {
 }
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     padding: clamp(16px, 4vw, 100px);
     margin-top: 100px;
     /*height: 300dvh;*/
-    /*border: 1px solid pink;*/
+    border: 1px solid pink;
 }
 
 /*NAVBAR*/
@@ -145,7 +147,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 .hero-section-left {
@@ -337,6 +339,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    border: 1px solid hotpink;
+    width: 90%;
+    position: relative;
+    margin: auto;
 }
 
 .titles-section-left p {
@@ -345,6 +351,7 @@ main {
     background-color: var(--primaryblue);
     padding: 8px;
     text-align: center;
+    font-size: 30px;
 }
 
 .experience-wrapper{
@@ -354,7 +361,7 @@ main {
 }
 
 .experience-section-right {
-    width: 70%;
+    min-width: 85%;
     display: flex;
     flex-direction: column;
     border: 3px solid #000000;
@@ -365,8 +372,8 @@ main {
     font-size: var(--responsive-text);
 }
 
-.experience-section-right span{
-    font-size: inherit;
+.experience-section-right p, span{
+    font-size: var(--responsive-text-title);
 }
 
 .experience-card {
