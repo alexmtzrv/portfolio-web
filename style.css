@@ -35,7 +35,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: clamp(16px, 4vw, 64px);
+    padding: clamp(16px, 4vw, 100px);
     margin-top: 100px;
     /*height: 300dvh;*/
     /*border: 1px solid pink;*/
@@ -140,16 +140,15 @@ main {
 /*HERO SECTION*/
 #hero-section {
     width: 100%;
-    /*max-height: 50dvh;*/
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
+    /*border: 1px solid red;*/
 }
 
 .hero-section-left {
-    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -251,7 +250,6 @@ main {
 
 .button {
     width: auto;
-    /*height: 40px;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -337,19 +335,22 @@ main {
 /*EXPERIENCE SECTION*/
 #experience-section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.titles-section-left {
-    width: 12%;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .titles-section-left p {
+    display: inline-block;
     font-family: var(--title-font);
     background-color: var(--primaryblue);
-    padding: 2px;
+    padding: 8px;
     text-align: center;
+}
+
+.experience-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .experience-section-right {
@@ -363,8 +364,12 @@ main {
 .experience-card {
     display: flex;
     flex-direction: column;
-    padding: 30px 50px 30px 100px;
+    padding: 30px;
     position: relative;
+}
+
+.experience-title-date{
+    font-weight: var(--normal-weight);
 }
 
 .top {
@@ -380,7 +385,7 @@ main {
     border: var(--card-borders);
     border-radius: var(--card-radius);
     box-shadow: var(--shadows);
-    position: absolute;
+    /*position: absolute;*/
     left: -200px;
     top: 100px;
 }
