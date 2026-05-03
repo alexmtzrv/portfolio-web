@@ -456,9 +456,9 @@ main {
 
 /*PROJECT SECTION*/
 #project-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-evenly;*/
 }
 
 .project-section-right {
