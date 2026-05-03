@@ -45,6 +45,16 @@ main {
     /*border: 1px solid pink;*/
 }
 
+.section-structure{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /*border: 1px solid hotpink;*/
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
 /*NAVBAR*/
 
 .navbar {
@@ -338,13 +348,7 @@ main {
 
 /*EXPERIENCE SECTION*/
 #experience-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    /*border: 1px solid hotpink;*/
-    width: 90%;
-    position: relative;
-    margin: auto;
+    border: 1px solid hotpink;
 }
 
 .titles-section-left p {
@@ -457,16 +461,22 @@ main {
 /*PROJECT SECTION*/
 #project-section {
     /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-evenly;*/
+    /*flex-direction: column;*/
+    /*gap: 1.5rem;*/
+    /*border: 1px solid hotpink;*/
+    /*width: 90%;*/
+    /*position: relative;*/
+    /*margin: auto;*/
 }
 
 .project-section-right {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-content: center;
     gap: 1rem;
+    border: 1px solid hotpink;
 }
 
 .project-card {
@@ -477,7 +487,7 @@ main {
     flex-grow: 1;
     /*padding: 12px 17px 12px 17px;*/
     padding: 25px;
-    max-width: 450px;
+    max-width: 425px;
 }
 
 .project-photo-wrapper {
@@ -498,9 +508,14 @@ main {
     margin-top: 1rem;
 }
 
+.project-title {
+    font-size: var(--responsive-text-title);
+}
+
 .project-description p {
     line-height: 1;
     font-weight: var(--normal-weight);
+    font-size: var(--responsive-text);
 }
 
 .project-skills {
@@ -511,7 +526,7 @@ main {
 }
 
 .project-skills li {
-    font-size: 25px;
+    font-size: var(--responsive-text-buttons);
     line-height: 1;
     background-color: inherit;
 }
@@ -546,12 +561,8 @@ main {
     font-weight: var(--highlight-weight);
 }
 
-.website-redirect-wrapper p {
-    font-size: 0.9rem;
-}
-
-.website-redirect span {
-    font-size: 20px;
+.website-redirect-wrapper p, span{
+    font-size: var(--responsive-text-buttons);
 }
 
 /*SKILLS SECTION*/
