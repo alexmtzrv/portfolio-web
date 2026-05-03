@@ -460,13 +460,7 @@ main {
 
 /*PROJECT SECTION*/
 #project-section {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*gap: 1.5rem;*/
-    /*border: 1px solid hotpink;*/
-    /*width: 90%;*/
-    /*position: relative;*/
-    /*margin: auto;*/
+
 }
 
 .project-section-right {
@@ -563,6 +557,35 @@ main {
 
 .website-redirect-wrapper p, span{
     font-size: var(--responsive-text-buttons);
+}
+
+@media screen and (max-width: 760px) {
+    #project-section {
+        /*width: 100%;*/
+    }
+
+    .project-section-right{
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex-direction: column;
+        max-width: inherit;
+        width: 100%;
+        padding: 0;
+    }
+
+    .project-photo-wrapper{
+        border-radius: 5px 5px 0 0;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #project-section {
+        width: 100%;
+    }
+
 }
 
 /*SKILLS SECTION*/
