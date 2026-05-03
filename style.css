@@ -23,9 +23,10 @@ body {
     --card-radius: 3px;
     --normal-fsize: 34px;
     --nav-height: 80px;
-    --responsive-text: clamp(28px, 3vw, 34px);
-    --responsive-text-buttons: clamp(22px, 3vw, 25px);
-    --responsive-text-title: clamp(30px, 3vw, 34px);
+    --responsive-text: clamp(24px, 3vw, 34px);
+    --responsive-text-buttons: clamp(21px, 3vw, 25px);
+    --responsive-text-title: clamp(28px, 3vw, 34px);
+    --responsive-text-section-title: clamp(24px, 3vw, 34px);
     width: 100dvw;
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
@@ -351,7 +352,7 @@ main {
     background-color: var(--primaryblue);
     padding: 8px;
     text-align: center;
-    font-size: 30px;
+    font-size: var(--responsive-text-section-title);
 }
 
 .experience-wrapper{
