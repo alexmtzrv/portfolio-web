@@ -28,6 +28,7 @@ body {
     --responsive-text-title: clamp(28px, 3vw, 34px);
     --responsive-text-section-title: clamp(24px, 3vw, 34px);
     width: 100dvw;
+    height: 300vh;
     background-color: #fefefe;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
     background-size: 25px 25px;
@@ -445,6 +446,11 @@ main {
 @media screen and (max-width: 730px) {
     #experience-section {
         width: 100%;
+    }
+
+    .experience-description li::before {
+        width: 7px;
+        height: 7px;
     }
 }
 
