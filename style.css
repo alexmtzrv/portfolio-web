@@ -341,14 +341,14 @@ main {
         align-items: start;
     }
 
-    .button {
+    .hero-section-buttons > .button {
         width: 100%;
     }
 }
 
 /*EXPERIENCE SECTION*/
 #experience-section {
-    border: 1px solid hotpink;
+    /*border: 1px solid hotpink;*/
 }
 
 .titles-section-left p {
@@ -470,7 +470,7 @@ main {
     justify-content: space-evenly;
     align-content: center;
     gap: 1rem;
-    border: 1px solid hotpink;
+    /*border: 1px solid hotpink;*/
 }
 
 .project-card {
@@ -481,7 +481,7 @@ main {
     flex-grow: 1;
     /*padding: 12px 17px 12px 17px;*/
     padding: 25px;
-    max-width: 425px;
+    max-width: 480px;
 }
 
 .project-photo-wrapper {
@@ -498,11 +498,12 @@ main {
     object-fit: cover;
 }
 
-.project-body {
-    margin-top: 1rem;
+.project-body, .project-skills {
+    margin-top: 0.6rem;
 }
 
 .project-title {
+    font-weight: var(--highlight-weight);
     font-size: var(--responsive-text-title);
 }
 
@@ -515,7 +516,6 @@ main {
 .project-skills {
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
     gap: 10px;
 }
 
@@ -559,11 +559,7 @@ main {
     font-size: var(--responsive-text-buttons);
 }
 
-@media screen and (max-width: 760px) {
-    #project-section {
-        /*width: 100%;*/
-    }
-
+@media screen and (max-width: 850px) {
     .project-section-right{
         flex-direction: column;
     }
@@ -572,12 +568,16 @@ main {
         flex-direction: column;
         max-width: inherit;
         width: 100%;
-        padding: 0;
+        padding: 0 0 20px;
     }
 
     .project-photo-wrapper{
-        border-radius: 5px 5px 0 0;
-        height: 225px;
+        border-radius: 10px 10px 0 0;
+        max-height: 200px;
+    }
+
+    .project-body, .website-redirect{
+        padding: 0 20px;
     }
 }
 
