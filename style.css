@@ -591,58 +591,32 @@ main {
 
 /*SKILLS SECTION*/
 #skills-section {
+    border: 1px solid hotpink;
+}
+
+.skills-section-wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .skills-section-right {
-    width: 70%;
+    min-width: 85%;
 }
 
-#skills-section-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "frontend frontend frontend frontend"
-    "backend tools tools tools";
-    gap: 1.5rem;
+.skills-section-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .skills-section-grid p {
     font-weight: var(--highlight-weight);
 }
 
-#fe-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-
-#be-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    justify-items: center;
-}
-
-#tools-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 1rem;
-
-}
-
-#skills-section-grid > .front-end-container {
-    grid-area: frontend;
-}
-
-#skills-section-grid > .back-end-container {
-    grid-area: backend;
-}
-
-#skills-section-grid > .tools-container {
-    grid-area: tools;
+.skills-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .skills-container {
@@ -660,14 +634,14 @@ main {
 
 .skill-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     border: var(--card-borders);
     border-radius: var(--card-radius);
     box-shadow: var(--shadows);
-    width: 150px;
-    height: 150px;
+    /*width: 150px;*/
+    /*height: 150px;*/
 }
 
 .skill-icon {
