@@ -678,10 +678,6 @@ main {
     background: linear-gradient(0deg, rgba(255, 239, 115, 1) 0%, rgba(255, 250, 209, 1) 100%);
 }
 
-#js-icon {
-    width: 65%;
-    height: 65%;
-}
 
 .python-card {
     background: #4B8BBE;
