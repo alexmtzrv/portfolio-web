@@ -278,6 +278,7 @@ main {
 
 .button p {
     line-height: 1;
+    font-size: var(--responsive-text-buttons);
 }
 
 .button img {
@@ -516,6 +517,7 @@ main {
 .project-skills {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -619,6 +621,10 @@ main {
     flex-wrap: wrap;
 }
 
+.skills-group > .button {
+    margin-right: clamp(30px,3vw, 90px);
+}
+
 .skills-container {
     padding: 40px;
     border: 3px solid #000000;
@@ -640,8 +646,6 @@ main {
     border: var(--card-borders);
     border-radius: var(--card-radius);
     box-shadow: var(--shadows);
-    /*width: 150px;*/
-    /*height: 150px;*/
 }
 
 .skill-icon {
