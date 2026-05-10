@@ -622,7 +622,8 @@ main {
 }
 
 .skills-container {
-    padding: 40px;
+    /*padding: 40px;*/
+    padding: clamp(20px,3vw, 40px);
     border: 3px solid #000000;
     border-radius: 10px;
 }
@@ -755,168 +756,55 @@ main {
     }
 }
 
-/*ABOUT ME SECTION*/
-#aboutme-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.aboutme-section-left {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.aboutme-photo {
-    width: 300px;
-    height: 300px;
-    position: relative;
-}
-
-.aboutme-photo svg {
-    position: absolute;
-    z-index: 10;
-}
-
-.aboutme-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: contain;
-    z-index: 20;
-    position: relative;
-    /*border: 1px solid black;*/
-}
-
-.aboutme-hobbies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: var(--card-borders);
-    box-shadow: var(--shadows);
-    background-color: var(--cardgreen);
-}
-
-.aboutme-hobbies p {
-    font-weight: var(--highlight-weight);
-}
-
-.hobbies-icons {
-    width: 25px;
-    height: 25px;
-}
-
-.hobbies-ul {
-    list-style: none;
-    font-weight: var(--normal-weight);
-}
-
-.hobbies-ul li span {
-    margin-right: 0.5rem;
-}
-
-.aboutme-section-right {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: start;
-    gap: 37px;
-    padding: 80px;
-}
-
-.aboutme-title {
-    width: 20%;
-}
-
-.aboutme-title p {
-    font-family: var(--title-font);
-    background-color: var(--primaryblue);
-    padding: 5px;
-    text-align: center;
-}
-
-.aboutme-information {
-    font-weight: var(--normal-weight);
-}
-
-.aboutme-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 0.8rem;
-    margin-top: 0.5rem;
-}
-
-.information-icons {
-    width: 35px;
-    height: 35px;
-}
-
-.aboutme-cv-download-button {
-    display: flex;
-    font-weight: var(--highlight-weight);
-}
-
-.cv-button {
-    background-color: var(--cardyellow);
-}
-
 /*CONTACT SECTION*/
 #contact-section {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact-section-left {
-    width: 30%;
+    /*width: 30%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact-title {
-    font-family: var(--title-font);
-    background-color: var(--primaryblue);
-    text-align: start;
-}
-
-.contact-row img {
-    transform: rotate(-90deg);
-}
-
 .contact-information {
-    width: 100%;
-    padding: 10px;
     font-weight: var(--highlight-weight);
     margin-top: 1.5rem;
+}
+
+.contact-information p, span {
+    margin: 0;
+    line-height: 1.5;
+    font-size: var(--responsive-text);
 }
 
 .contact-section-right {
     display: flex;
     justify-content: center;
-    width: 70%;
 }
 
 .form-wrapper {
-    width: 80%;
+    min-width: 300px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 4px solid #000000;
     box-shadow: 10px 10px #000000;
+    background-color: #f2f2f2;
 }
 
 .form-body {
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    background-color: #f2f2f2;
+    /*padding: 50px 0;*/
+    padding: clamp(20px, 4vw, 50px) 0;
 }
 
 .form-top-bar {
@@ -968,6 +856,7 @@ main {
     border-right: none;
     background-color: #dedede;
     padding-left: 10px;
+    font-size: var(--responsive-text);
 }
 
 .form-body input:first-child {
@@ -975,10 +864,14 @@ main {
 }
 
 .form-body button {
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
+    margin-top: clamp(0.5rem, 4vw, 1rem);
     background-color: var(--cardgreen);
     font-weight: var(--highlight-weight);
-    font-size: 40px;
+}
+
+.form-body button > p{
+    font-size: calc(var(--responsive-text-buttons) + 3px) ;
 }
 
 .form-body textarea {
@@ -990,6 +883,41 @@ main {
     font-weight: var(--normal-weight);
     letter-spacing: 2px;
     color: #0c0c0c;
+}
+
+@media screen and (max-width:900px){
+    #contact-section {
+        flex-direction: column;
+    }
+    .contact-section-left {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .contact-information {
+        padding: 0 8px ;
+        margin-top: inherit;
+    }
+
+    .contact-information p{
+        display: inline-block;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .form-top-bar{
+        height: 33px;
+    }
+
+    .top-bar-buttons span{
+        width: 15px;
+        height: 15px;
+    }
 }
 
 /*FOOTER SECTION*/
