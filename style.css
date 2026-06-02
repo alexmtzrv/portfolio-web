@@ -869,6 +869,7 @@ main {
 
 .form-body button > p {
     font-size: calc(var(--responsive-text-buttons) + 3px);
+    color: #000000;
 }
 
 .form-body textarea {
