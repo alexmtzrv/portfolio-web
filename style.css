@@ -41,8 +41,6 @@ main {
     gap: 2rem;
     padding: clamp(16px, 4vw, 100px);
     margin-top: 100px;
-    /*height: 300dvh;*/
-    /*border: 1px solid pink;*/
 }
 
 .section-structure{
@@ -59,7 +57,6 @@ main {
     .section-structure {
         width: 100%;
     }
-
 }
 
 /*NAVBAR*/
@@ -924,8 +921,9 @@ main {
 .footer-section {
     display: flex;
     flex-direction: row;
-    height: 15dvh;
+    /*height: 15dvh;*/
     border-top: 2px solid #000;
+    margin-top: 40px;
 }
 
 .footer-left-section {
@@ -935,15 +933,34 @@ main {
 
 .footer-right-section {
     width: 90dvw;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 5rem;
+    padding: 30px 0 30px;
 }
 
-.footer-section-buttons {
-    flex-grow: inherit;
+@media screen and (max-width:730px){
+    .footer-left-section{
+        display: none;
+    }
+
+    .footer-right-section{
+        width: 90%;
+    }
+
+    .footer-section{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:620px){
+
+    .footer-right-section{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 }
 
 
