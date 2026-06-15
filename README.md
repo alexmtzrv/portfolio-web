@@ -1,3 +1,6 @@
 # portfolio-web
-Echa un vistazo a mi portafolio web. En proceso de desarrollo enfocado en HTML y CSS con una futura implementación de JS.
-Puedes visitarlo aquí https://portfolio-web-five-drab.vercel.app
+
+Portafolio web personal desarrollado con HTML y CSS, enfocado en diseño responsivo y buenas prácticas de desarrollo web. Actualmente se encuentra en evolución con futuras implementaciones en JavaScript.
+
+🔗 Visita el proyecto:
+https://portfolio-web-five-drab.vercel.app
