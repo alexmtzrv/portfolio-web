@@ -299,6 +299,8 @@ main {
 .button {
     width: auto;
     display: flex;
+    text-decoration: none;
+    color: inherit;
     flex-direction: row;
     justify-content: start;
     align-items: center;
