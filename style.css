@@ -38,9 +38,9 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /*gap: 2rem;*/
     padding: clamp(16px, 4vw, 100px);
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .section-structure {
@@ -51,6 +51,7 @@ main {
     width: 90%;
     position: relative;
     margin: auto;
+    padding-top: 100px;
 }
 
 @media screen and (max-width: 730px) {
@@ -177,13 +178,17 @@ main {
 
     .navbar-li {
         text-align: center;
-        font-size: 40px;
+    }
+
+    .navbar-li a {
+        font-size: 45px;
     }
 }
 
 /*HERO SECTION*/
 #hero-section {
     width: 100%;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
