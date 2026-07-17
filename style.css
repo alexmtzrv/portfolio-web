@@ -261,7 +261,6 @@ main {
 }
 
 .hero-section-text p {
-    line-height: 1;
     font-weight: var(--normal-weight);
     font-size: var(--responsive-text);
 }
