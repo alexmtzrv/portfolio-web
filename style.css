@@ -135,7 +135,7 @@ main {
     transform: scale(1.03);
 }
 
-.navbar-ul :nth-child(4)  {
+.navbar-ul :nth-child(5)  {
     color: var(--highlightblue);
     font-weight: var(--highlight-weight);
 }
