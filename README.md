@@ -1,8 +1,22 @@
 # 🌐 Personal Portfolio
 
+<img width="1920" height="427" alt="image" src="https://github.com/user-attachments/assets/2d08bcf1-cc16-434e-8aac-35e31201b76b" />
+
 A modern and responsive personal portfolio built to showcase my skills, experience, and professional background as a **Web Developer**. This website serves as my online resume, making it easy for recruiters and collaborators to learn more about me, explore my work, and get in touch.
 
-🔗 **Live Demo:** https://portfolio-web-five-drab.vercel.app
+🔗 **Live Demo:** [portfolio-web-five-drab.vercel.app](https://portfolio-web-five-drab.vercel.app)
+
+---
+
+## ✨ Features
+
+- Responsive design
+- Smooth scrolling navigation
+- Interactive navbar animations
+- Downloadable resume
+- Contact form powered by Formspree
+- GitHub & LinkedIn integration
+- Fast deployment with Vercel
 
 ---
 
@@ -12,9 +26,10 @@ A modern and responsive personal portfolio built to showcase my skills, experien
 - CSS3
 - JavaScript (ES6+)
 - Formspree
-- Git & GitHub
+- Git
+- GitHub
 - Vercel
-
+  
 ---
 
 ## 💡 Why I Built This
